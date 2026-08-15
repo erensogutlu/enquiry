@@ -1,0 +1,73 @@
+{
+  "servisler": [
+    {
+      "isim": "Gravatar",
+      "tip": "hash_kontrol",
+      "url": "https://www.gravatar.com/avatar/{}?d=404",
+      "aciklama": "gravatar profil resmi kontrolü"
+    },
+    {
+      "isim": "GitHub",
+      "tip": "api_arama",
+      "url": "https://api.github.com/search/users?q={}+in:email",
+      "aciklama": "github e-posta ile kullanıcı arama"
+    },
+    {
+      "isim": "Spotify",
+      "tip": "durum_kontrol",
+      "url": "https://open.spotify.com",
+      "aciklama": "spotify hesap kontrolü"
+    },
+    {
+      "isim": "HaveIBeenPwned (v3)",
+      "tip": "api_kontrol",
+      "url": "https://haveibeenpwned.com/api/v3/breachedaccount/{}",
+      "aciklama": "veri sızıntısı kontrolü (api anahtarı gerektirir)",
+      "api_anahtari_gerekli": true
+    },
+    {
+      "isim": "BreachDirectory",
+      "tip": "api_kontrol",
+      "url": "https://breachdirectory.org/api/search?query={}&type=email",
+      "aciklama": "veri sızıntısı kontrolü"
+    },
+    {
+      "isim": "Emailrep.io",
+      "tip": "api_kontrol",
+      "url": "https://emailrep.io/{}",
+      "aciklama": "e-posta itibar kontrolü"
+    },
+    {
+      "isim": "Hunter.io",
+      "tip": "api_kontrol",
+      "url": "https://api.hunter.io/v2/email-verifier?email={}",
+      "aciklama": "e-posta doğrulama ve şirket bilgisi",
+      "api_anahtari_gerekli": true
+    },
+    {
+      "isim": "Disqus",
+      "tip": "profil_kontrol",
+      "url": "https://disqus.com/api/3.0/users/details.json?user=email:{}&api_key=E8Uh5l5fHZ6gD8U3KycjAIAk46f68Zw7C6eW8WSjZvCLXebZ7p0r1yrYDrLilk2F",
+      "aciklama": "disqus profil kontrolü"
+    }
+  ],
+  "mx_kontrol": {
+    "aciklama": "e-posta alan adının mx kayıtlarını kontrol eder",
+    "populer_saglayicilar": {
+      "google.com": "Gmail",
+      "googlemail.com": "Gmail",
+      "outlook.com": "Outlook",
+      "hotmail.com": "Hotmail",
+      "yahoo.com": "Yahoo Mail",
+      "yandex.com": "Yandex Mail",
+      "protonmail.com": "ProtonMail",
+      "proton.me": "ProtonMail",
+      "icloud.com": "iCloud Mail",
+      "zoho.com": "Zoho Mail",
+      "mail.ru": "Mail.ru",
+      "gmx.com": "GMX Mail",
+      "tutanota.com": "Tutanota",
+      "fastmail.com": "FastMail"
+    }
+  }
+}
